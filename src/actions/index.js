@@ -1,4 +1,4 @@
-var baseUrl = "http://localhost:3000/api/business"
+var baseUrl = "/api/business"
 
 export function postNewBusiness(values,cb){
     const request = fetch(baseUrl, {
