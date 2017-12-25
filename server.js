@@ -30,8 +30,7 @@ const routes = require('./src/components/app').default()
 
 
 //database url
-// mongoose.connect('mongodb://localhost/poetic');
-mongoose.connect('mongodb://uchestik:abcdefgh1234@ds163656.mlab.com:63656/business-finder')
+mongoose.connect('mongodb://localhost/poetic');
 
 app.server = http.createServer(app)
 app.use(express.static(path.join(__dirname, 'build')));
@@ -138,5 +137,5 @@ app.get('*', (req, res) => {
 
 
 
-// app.listen(3000);
-app.listen(process.env.PORT, process.env.IP);
+app.listen(3000);
+// app.listen(process.env.PORT, process.env.IP);
