@@ -1,3 +1,5 @@
+This app helps tells you how far any business is using the zipcode
+You can also rate the business
 This app is currently running on https://business-finder.herokuapp.com
 
 To run this app locally 
