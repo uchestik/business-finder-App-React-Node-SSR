@@ -24,13 +24,16 @@ class BusinessList extends Component{
 
     
         for (var i=0; i<filtered.length && zipcode.length === 5 && typeof Number(zipcode) === "number"; i++){
-            distance.push(zipcodes.distance(zipcode, filtered[i].zipcode));
+            distance.push(zipcodes.distance(zipcode, filtered[i].zipcode));            
+        }
+
+        for (var i=0; i<distance.length;i++){
             filtered[i].distance = distance[i];
+        }
             final = filtered.sort(function (a, b) {
                 return a.distance - b.distance;
-              })
-            
-        }
+            })
+
             this.setState({
                 filtered:final
             });     
